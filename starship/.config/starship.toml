@@ -20,3 +20,6 @@ discharging_symbol = "💀 "
 [[battery.display]]
 threshold = 30
 style = "bold red"
+
+[nodejs]
+disabled = true
