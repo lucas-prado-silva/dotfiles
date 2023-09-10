@@ -13,10 +13,14 @@ eval $(thefuck --alias)
 eval "$(fnm env --use-on-cd)"
 
 # Aliases
+alias t="tms"
+alias tss="tms switch"
+
+alias lg="lazygit"
+
 alias fk="fuck"
 alias bastion='ssh -t bastion "watch -n 60 ls"'
 
-alias t="tmux"
 alias ta="tmux attach"
 alias v="nvim"
 alias vim="nvim"
@@ -81,10 +85,10 @@ alias ohmyzsh="nvim ~/.oh-my-zsh"
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # nvm with lazy loading
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
-alias node='unalias node ; unalias npm ; nvm use default ; node $@'
-alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+# alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+# alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 
 # Autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -101,10 +105,10 @@ fi
 eval "$(starship init zsh)"
 
 # pnpm
-export PNPM_HOME="/Users/silval4/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
-eval "$(zellij setup --generate-auto-start zsh)" pnpm endeval "$(zellij setup --generate-auto-start zsh)"
+# export PNPM_HOME="/Users/silval4/Library/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
+#
+# eval "$(zellij setup --generate-auto-start zsh)" pnpm endeval "$(zellij setup --generate-auto-start zsh)"

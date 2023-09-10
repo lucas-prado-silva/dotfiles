@@ -31,7 +31,8 @@ key_binds:
   - { key: W, mods: Command, action: None }
 
 import:
-  - ~/.config/alacritty/nord/nord.yml
+ - ~/.config/alacritty/kanagawa/kanagawa.yml
+#  - ~/.config/alacritty/nord/nord.yml
 # uncomment the flavour you want below:
 # - ~/.config/alacritty/poimandres/poimandres.yml
 # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
