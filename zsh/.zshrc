@@ -112,3 +112,10 @@ eval "$(starship init zsh)"
 # esac
 #
 # eval "$(zellij setup --generate-auto-start zsh)" pnpm endeval "$(zellij setup --generate-auto-start zsh)"
+
+# bun completions
+[ -s "/Users/silval4/.bun/_bun" ] && source "/Users/silval4/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
