@@ -1,6 +1,5 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export OPENAI_API_KEY="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"
 
 plugins=(
     git
@@ -102,7 +101,7 @@ else
   alias ls='ls -G'
 fi
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # pnpm
 # export PNPM_HOME="/Users/silval4/Library/pnpm"
