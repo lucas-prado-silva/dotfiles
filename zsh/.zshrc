@@ -62,10 +62,6 @@ killport() {
 # pls
 alias pls='sudo $(fc -ln -1)'
 
-# NVM settings 
-export NVM_LAZY=1
-export NVM_AUTOLOAD=1
-
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
@@ -101,8 +97,6 @@ else
   alias ls='ls -G'
 fi
 
-# eval "$(starship init zsh)"
-
 # pnpm
 # export PNPM_HOME="/Users/silval4/Library/pnpm"
 # case ":$PATH:" in
@@ -118,3 +112,5 @@ fi
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(starship init zsh)"
