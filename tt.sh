@@ -7,7 +7,7 @@ CATPPUCCIN_GRAY="\033[38;5;240m"
 RESET_COLOR="\033[0m"
 
 ZOXIDE_RESULT=$(zoxide query -l)
-FIND_RESULT=$(find ~/.config ~/work ~/personal -maxdepth 1 -type d)
+FIND_RESULT=$(find ~/work ~/personal ~/dotfiles -maxdepth 1 -type d)
 
 COMBINED_RESULT=$(echo -e "$ZOXIDE_RESULT\n$FIND_RESULT" | awk '!seen[$0]++' | sed "s|$HOME|~|")
 
@@ -15,6 +15,8 @@ COLORIZED_RESULT=$(echo "$COMBINED_RESULT" | while read -r line; do
     if [[ "$line" == *~/personal* ]]; then
         printf "${CATPPUCCIN_LAVENDER}%s${RESET_COLOR}\n" "$line"
     elif [[ "$line" == *~/work* ]]; then
+        printf "${CATPPUCCIN_SAPPHIRE}%s${RESET_COLOR}\n" "$line"
+    elif [[ "$line" == *~/dotfiles* ]]; then
         printf "${CATPPUCCIN_SAPPHIRE}%s${RESET_COLOR}\n" "$line"
     elif [[ "$line" == *~/.config* ]]; then
         printf "${CATPPUCCIN_PEACH}%s${RESET_COLOR}\n" "$line"
