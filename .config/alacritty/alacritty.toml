@@ -163,7 +163,7 @@ live_config_reload = true
 # opacity = 0.9
 
 [window]
-startup_mode = "Maximized"
+startup_mode = "Fullscreen"
 title = "Alacritty"
 dynamic_title = true 
 decorations_theme_variant = "None"
