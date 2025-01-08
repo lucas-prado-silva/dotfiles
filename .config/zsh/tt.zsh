@@ -1,0 +1,1 @@
+alias tt=~/tt.sh
