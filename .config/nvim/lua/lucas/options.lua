@@ -1,6 +1,9 @@
--- line numbers
+-- enable line numbers
 vim.opt.nu = false
+
+-- enable relative line numbers
 vim.opt.relativenumber = false
+-- toggle line numbers
 vim.keymap.set(
     "n",
     "<leader>z",
@@ -8,6 +11,7 @@ vim.keymap.set(
     { desc = "toggle line numbers" }
 )
 
+-- tab settings
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
