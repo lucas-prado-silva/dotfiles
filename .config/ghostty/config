@@ -1,4 +1,6 @@
 theme = SeaShells
 background-opacity = 1
-fullscreen=true
+fullscreen=false
 background=#11111b
+window-decoration=false
+# keybind = cmd+t=command:/opt/homebrew/bin/tmux display-popup -E ~/tt.sh

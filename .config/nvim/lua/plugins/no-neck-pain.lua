@@ -1,7 +1,7 @@
 return {
     "shortcuts/no-neck-pain.nvim",
     version = "*",
-    enabled = false,
+    enabled = true,
     config = function()
         require("no-neck-pain").setup({
             -- Prints useful logs about triggered events, and reasons actions are executed.
@@ -10,7 +10,7 @@ return {
 
             -- The width of the focused window that will be centered. When the terminal width is less than the `width` option, the side buffers won't be created.
             --- @type integer|"textwidth"|"colorcolumn"
-            width = 140,
+            width = 160,
 
             -- Represents the lowest width value a side buffer should be.
             -- This option can be useful when switching window size frequently, example:
@@ -33,7 +33,7 @@ return {
                 -- If the main window is  a side tree (e.g. NvimTree) or a dashboard, the command is delayed until it finds a valid window.
                 -- The command is cleaned once it has successfuly ran once.
                 --- @type boolean
-                enableOnVimEnter = true,
+                enableOnVimEnter = false,
                 -- When `true`, enables the plugin when you enter a new Tab.
                 -- note: it does not trigger if you come back to an existing tab, to prevent unwanted interfer with user's decisions.
                 --- @type boolean
@@ -173,7 +173,7 @@ return {
         NoNeckPain.bufferOptions = {
             -- When `false`, the buffer won't be created.
             --- @type boolean
-            enabled = false,
+            enabled = true,
             --- @see NoNeckPain.bufferOptionsColors `:h NoNeckPain.bufferOptionsColors`
             colors = NoNeckPain.bufferOptionsColors,
             --- @see NoNeckPain.bufferOptionsBo `:h NoNeckPain.bufferOptionsBo`
@@ -231,11 +231,11 @@ return {
             -- - `autowriteall`
             -- - `autoread`.
             --- @type boolean
-            enabled = false,
+            enabled = true,
             -- The path to the file to save the scratchPad content to and load it in the buffer.
             --- @type string?
             --- @example: `~/notes.norg`
-            pathToFile = "",
+            pathToFile = "/Users/silval4/work/vault/scratchpad.md",
         }
 
         NoNeckPain.bufferOptionsColors = {
