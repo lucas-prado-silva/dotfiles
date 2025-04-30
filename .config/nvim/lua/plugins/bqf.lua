@@ -4,12 +4,12 @@ return {
     config = function()
         require('bqf').setup({
             auto_enable = true,
-            auto_resize_height = true, -- highly recommended enable
+            auto_resize_height = true,
             preview = {
                 win_height = 12,
                 win_vheight = 12,
                 delay_syntax = 80,
-                -- border = { '┏', '━', '┓', '┃', '┛', '━', '┗', '┃' },
+                border = { '┏', '━', '┓', '┃', '┛', '━', '┗', '┃' },
                 show_title = false,
             },
             -- make `drop` and `tab drop` to become preferred

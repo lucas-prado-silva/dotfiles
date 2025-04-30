@@ -5,8 +5,6 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
         local bufferline = require("bufferline")
-        vim.opt.termguicolors = true
-
         bufferline.setup({
             options = {
                 style_preset = bufferline.style_preset.minimal,
@@ -14,7 +12,6 @@ return {
                 buffer_close_icon = "",
                 close_icon = "",
                 indicator = {
-                    -- icon = "▎",
                     style = "none",
                 }
             }
