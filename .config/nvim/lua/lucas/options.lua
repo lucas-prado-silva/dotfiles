@@ -1,3 +1,12 @@
+-- general options
+vim.o.completeopt = "menu,menuone,popup,fuzzy"
+
+-- fold
+vim.o.foldenable = true   -- enable fold
+vim.o.foldlevel = 99      -- start editing with all folds opened
+vim.o.foldmethod = "expr" -- use tree-sitter for folding method
+vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+
 -- enable line numbers
 vim.opt.nu = false
 
@@ -41,7 +50,7 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.smoothscroll = true
 
-vim.opt.updatetime = 50
+vim.opt.updatetime = 200
 
 vim.g.mapleader = " "
 
@@ -69,3 +78,6 @@ vim.cmd("set statusline=%{repeat('─',winwidth('.'))}")
 
 vim.cmd("set whichwrap+=<,>,[,],h,l")
 vim.cmd([[set iskeyword+=-]])
+
+-- remove netrw banner for cleaner looking
+vim.g.netrw_banner = 0
