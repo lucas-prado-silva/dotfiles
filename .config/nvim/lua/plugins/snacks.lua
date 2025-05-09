@@ -32,7 +32,7 @@ return {
         },
         quickfile = { enabled = true },
         statuscolumn = { enabled = true },
-        words = { enabled = true },
+        words = { enabled = false },
         styles = {
             notification = {
                 wo = { wrap = true } -- Wrap notifications

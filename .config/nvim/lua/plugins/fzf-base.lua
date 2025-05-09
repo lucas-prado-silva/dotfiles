@@ -1,1 +1,1 @@
-return { "junegunn/fzf", build = "./install --bin" }
+return { "junegunn/fzf", build = "./install --bin", enabled = false }
