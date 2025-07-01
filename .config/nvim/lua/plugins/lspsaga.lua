@@ -1,5 +1,6 @@
 return {
     "nvimdev/lspsaga.nvim",
+    enabled = true,
     config = function()
         require("lspsaga").setup({
             lightbulb = { virtual_text = false },

@@ -1,7 +1,7 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-palette = "tokyo_night"
+palette = "everforest"
 
 [character]
 success_symbol = '[❯](white)'
@@ -34,4 +34,33 @@ base = "#c0caf5"
 mantle = "#9ece6a"
 crust = "#ff9e64"
 
+[palettes.everforest]
+rosewater = "#D699B6"
+flamingo = "#DBBC7F"
+pink = "#DF69BA"
+mauve = "#35A77C"
+red = "#F85552"
+maroon = "#FEF2D5"
+peach = "#8DA101"
+yellow = "#DFA000"
+green = "#A7C080"
+teal = "#7FBBB3"
+sky = "#7FBBB3"
+sapphire = "#D699B6"
+blue = "#7FBBB3"
+lavender = "#83C092"
+text = "#D3C6AA"
+subtext1 = "#c0caf5"
+subtext0 = "#a9b1d6"
+overlay2 = "#0db9d7"
+overlay1 = "#c0caf5"
+overlay0 = "#ff9e64"
+surface2 = "#ff899d"
+surface1 = "#c0caf5"
+surface0 = "#faba4a"
+base = "#c0caf5"
+mantle = "#9ece6a"
+crust = "#ff9e64"
 
+[nodejs]
+disabled=true
