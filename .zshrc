@@ -54,7 +54,14 @@ alias lg="lazygit"
 alias ..="cd .."
 alias ...="cd .. & cd .."
 alias cat="bat"
-alias air=~/.air
+
+####################################################
+# Air
+###################################################
+alias air='~/go/bin/air'
+export GOPATH=$HOME/xxxxx
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$(go env GOPATH)/bin #Confirm this line in your .profile and make sure to source the .profile if you add it!!!
 
 ####################################################
 # PNPM
